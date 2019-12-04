@@ -1,0 +1,27 @@
+﻿<Window x:Class="AukroDbWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AukroDbWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10,0,-10,0">
+        <Button x:Name="Log_button" Content="Přihlásit" HorizontalAlignment="Left" Margin="179,213,0,0" VerticalAlignment="Top" Width="98" Height="35" Click="Log_button_Click"/>
+        <TextBox x:Name="Name_text" HorizontalAlignment="Left" Height="37" Margin="27,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="Password_text" HorizontalAlignment="Left" Height="37" Margin="27,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Text=""/>
+        <Label Content="Jméno" HorizontalAlignment="Left" Margin="27,32,0,0" VerticalAlignment="Top" Height="42" Width="94"/>
+        <Label Content="Heslo" HorizontalAlignment="Left" Margin="27,128,0,0" VerticalAlignment="Top" Height="43" Width="83"/>
+        <TextBox x:Name="List_text" HorizontalAlignment="Left" Height="225" TextWrapping="Wrap" VerticalAlignment="Top" Width="387" Margin="339,83,0,0" IsReadOnly="True" Text=""/>
+        <Button x:Name="Add_button" Content="Přidat" HorizontalAlignment="Left" Margin="202,364,0,0" VerticalAlignment="Top" Width="75" Command="" Click="Add_button_Click"/>
+        <TextBox x:Name="Description_art_text" HorizontalAlignment="Left" Height="23" Margin="10,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text=""/>
+        <TextBox x:Name="Name_art_text" HorizontalAlignment="Left" Height="23" Margin="10,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Price_art_text" HorizontalAlignment="Left" Height="23" Margin="10,361,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Popis" HorizontalAlignment="Left" Margin="135,333,0,0" VerticalAlignment="Top"/>
+        <Label Content="Název" HorizontalAlignment="Left" Margin="135,305,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cena" HorizontalAlignment="Left" Margin="140,361,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Reg_button" Content="Registrace" HorizontalAlignment="Left" Margin="27,213,0,0" VerticalAlignment="Top" Width="98" Height="35" Click="Reg_button_Click"/>
+        <Button x:Name="List_button" Content="List" HorizontalAlignment="Left" Margin="595,364,0,0" VerticalAlignment="Top" Height="30" Width="101" Click="List_button_Click"/>
+
+    </Grid>
+</Window>
